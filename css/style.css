@@ -47,6 +47,10 @@ header {
 
 #countries {
     /* height: 400px; */
+    background: #031b4e url('https://images.prismic.io/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg?auto=compress,format');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg-blue {
@@ -102,6 +106,16 @@ footer {
     line-height: 40px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #2b82ff;
+}
+
+nav .btn-default:hover {
+    color: white;
+    background-color: #2b82ff;
+    border: 2px solid #2b82ff;
 }
 
 .btn-pp {
@@ -189,6 +203,12 @@ color: red;
     font-size: 12px;
 }
 
+header .btn-default:hover {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
 /* LOGOS */
 .logos-row {
     height: 80px;
@@ -219,6 +239,7 @@ color: red;
     color: #2b82ff;
     font-weight: bold;
     line-height: 80px;
+    cursor: pointer;
 }
 
 /* DEPLOY */
@@ -274,7 +295,7 @@ aside {
     list-style-type: none;
     border-left: 2px solid #e5e8ed;
     padding-left: 18px;
-
+    cursor: pointer;
 }
 
 #deploy aside ul li:nth-child(1) {
@@ -305,30 +326,31 @@ aside {
 
 /* <!-- DESIGN CAROUSEL --> */
 .design-row {
-    height: 200px;
+    /* height: 200px; */
 }
 
 .design-row-2 {
-    height: 500px;
+    /* height: 500px; */
 }
 
 .design-row-3 {
-    height: 100px;
+    /* height: 100px; */
 }
 
 #design h2 {
-    margin-top: 80px;
+    padding-top: 50px;
     color: #223863;
     font-weight: bold;
 }
 
 #design h4 {
     color: grey;
+    padding-bottom: 50px;
 }
 
 #design img {
-    width: 600px;
-    padding-top: 80px;
+    width: 60%;
+    /* padding-top: 80px; */
 }
 
 #design span {
@@ -337,6 +359,7 @@ aside {
     padding-top: 50px;
     position: relative;
     top: 10%;
+    cursor: pointer;
 }
 
 #design p {
@@ -346,6 +369,8 @@ aside {
 
 .svg-inline--fa {
     color: #0270ff;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 
@@ -390,11 +415,55 @@ aside {
 
 /* <!-- COUNTRIES --> */
 .countries-row {
-    height: 100px;
+    /* height: 100px; */
 }
 
 .countries-row-2 {
     height: 300px;
+}
+
+#countries h2 {
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.c-line p {
+    color: white;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-right: 15%;
+}
+
+.p-s {
+    color: white;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-right: 15%;
+}
+
+.c-line {
+    width: 100%;
+    height: 40px;
+    color: white;
+    line-height: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.c-line-2 {
+    width: 100%;
+    height: 40px;
+    color: white;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#third-p {
+    margin-right: 0;
+    margin-left: 67px;
 }
 
 /* ROCKER CAROUSEL */
@@ -420,7 +489,55 @@ aside {
     height: 500px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
+    .countries-row-2 {
+        width: 100%;
+        height: 240px;
+    }
+    .c-line {
+        width: 100%;
+    }
+    .c-line-1 {
+        width: 100%;
+        border-bottom: none;
+        height: 40px;
+        color: white;
+        line-height: 40px;
+        font-weight: bold;
+        /* margin-right: 22%; */
+
+    }
+    .c-line-2 {
+        width: 100%;
+        height: 40px;
+        color: white;
+        line-height: 40px;
+        font-weight: bold;
+        /* margin-right: 22%; */
+        border-bottom: 1px solid white;
+    }
+    .c-line p {
+        color: white;
+        /* line-height: 40px; */
+        float: left;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-right: 22%;
+    }
+    .p-s {
+        color: white;
+        float: left;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-right: 22%;
+    }
+    #third-p {
+        float: right;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
     /* .navbar-header {
         float: none;
     }
@@ -465,12 +582,10 @@ aside {
         padding-left: 3px;
         padding-right: 3px;
     }
-
     aside {
         height: 150px;
         text-align: center;
     }
-
     #deploy aside .aside-list {
         width: 75%;
         height: 55px;
@@ -479,7 +594,6 @@ aside {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     #deploy aside .aside-list {
         color: grey;
         font-weight: bold;
@@ -487,7 +601,6 @@ aside {
         line-height: 55px;
         list-style-type: none;
     }
-
     #deploy aside ul li {
         list-style-type: none;
         border-top: 2px solid #e5e8ed;
@@ -496,15 +609,30 @@ aside {
         border-left: none;
         text-align: center;
     }
-
     #deploy aside ul li:nth-child(1) {
         border-top: 2px solid #0270ff;
         color: #223863;
         border-left: none;
     }
-
     .deploy-row-row {
         height: 350px;
+    }
+    #design img {
+
+    }
+    .countries-row-2 {
+        width: 100%;
+        height: 240px;
+    }
+    #design p {
+        padding-top: 30px;
+    }
+}
+
+@media screen (min-width: 782px) and (max-width: 991px;) {
+    .countries-row-2 {
+        width: 100%;
+        height: 240px;
     }
 }
 
