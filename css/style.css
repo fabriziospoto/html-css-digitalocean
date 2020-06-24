@@ -351,11 +351,41 @@ aside {
 
 /* <!-- FEATURES --> */
 .features-row {
-    height: 150px;
+    /* height: 150px; */
 }
 
 .features-row-2 {
-    height: 250px;
+    /* height: 250px; */
+}
+
+#features h2 {
+    color: #223863;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+#features img {
+    width: 50px;
+}
+
+#features h4 {
+    color: #223863;
+    margin: 0;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+#features p {
+    color: grey;
+    margin-left: 0;
+    padding-top: 15px;
+    font-size: 17px;
+}
+
+#features p:last-child {
+    color: #2b82ff;
+    font-weight: bold;
+    padding-bottom: 50px;
 }
 
 /* <!-- COUNTRIES --> */
