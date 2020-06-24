@@ -3,6 +3,10 @@ h1, h2, h3, h4 {
     font-family: 'Muli', sans-serif;
 }
 
+h2 {
+    font-size: 35px;
+}
+
 .letter-w {
     color: white;
 }
@@ -79,7 +83,8 @@ footer {
 }
 
 .nav-img {
-    width: 180px;
+    width: 150px;
+    padding-top: 6px;
 }
 .nav-p {
     background-color: white;
@@ -95,6 +100,8 @@ footer {
 .navbar ul li a {
     /* height: 70px; */
     line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .btn-pp {
@@ -172,18 +179,51 @@ float: left;
 color: red;
 }
 
+#terms {
+    color: #2b82ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.jumbotron p {
+    font-size: 12px;
+}
+
 /* LOGOS */
 .logos-row {
     height: 80px;
 }
 
-.logos-row-2 {
+/* .logos-row-2 {
     height: 110px;
+} */
+
+#business {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #a4acbe;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+#logos img {
+    width: 120px;
+    line-height: 110px;
+}
+
+.logos-mr {
+    margin-right: 40px;
+}
+
+.customer {
+    color: #2b82ff;
+    font-weight: bold;
+    line-height: 80px;
 }
 
 /* DEPLOY */
 .deploy-row {
-    height: 300px;
+    /* height: 300px; */
 }
 
 aside {
@@ -191,17 +231,123 @@ aside {
 }
 
 .deploy-row-2 {
-    height: 500px;
+    /* height: 500px; */
+}
+
+.deploy-box {
+    position: relative;
+    top: 20%;
+    padding-bottom: 80px;
+}
+
+#deploy h2 {
+    margin-top: 80px;
+    color: #223863;
+    font-weight: bold;
+}
+
+#deploy h4 {
+    width: 90%;
+    line-height: 25px;
+    color: #616e8b;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.aside-list {
+    width: 100%;
+}
+
+#deploy aside .aside-list {
+    color: grey;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 55px;
+    list-style-type: none;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+#deploy aside ul li {
+    list-style-type: none;
+    border-left: 2px solid #e5e8ed;
+    padding-left: 18px;
+
+}
+
+#deploy aside ul li:nth-child(1) {
+    border-left: 2px solid #0270ff;
+    color: #223863;
+}
+
+.deploy-row-row {
+    height: 250px;
+}
+
+#deploy img {
+    width: 50px;
+}
+
+#deploy h4 {
+    color: #223863;
+    margin: 0;
+    padding-top: 15px;
+}
+
+#deploy p {
+    color: grey;
+    margin-left: 0;
+    padding-top: 15px;
+    font-size: 17px;
 }
 
 /* <!-- DESIGN CAROUSEL --> */
 .design-row {
-    height: 300px;
+    height: 200px;
 }
 
 .design-row-2 {
     height: 500px;
 }
+
+.design-row-3 {
+    height: 100px;
+}
+
+#design h2 {
+    margin-top: 80px;
+    color: #223863;
+    font-weight: bold;
+}
+
+#design h4 {
+    color: grey;
+}
+
+#design img {
+    width: 600px;
+    padding-top: 80px;
+}
+
+#design span {
+    font-size: 40px;
+    color: #223863;
+    padding-top: 50px;
+    position: relative;
+    top: 10%;
+}
+
+#design p {
+    color: #223863;
+    font-weight: bold;
+}
+
+.svg-inline--fa {
+    color: #0270ff;
+}
+
 
 /* <!-- FEATURES --> */
 .features-row {
@@ -244,8 +390,8 @@ aside {
     height: 500px;
 }
 
-@media (max-width: 992px) {
-    .navbar-header {
+@media screen and (max-width: 992px) {
+    /* .navbar-header {
         float: none;
     }
     .navbar-left,.navbar-right {
@@ -278,8 +424,62 @@ aside {
     }
     .collapse.in{
         display:block !important;
-    }
+    } */
     .btn-nav-cll {
         margin-top: 18px;
     }
+
+    .navbar ul li a {
+        /* height: 70px; */
+        line-height: 40px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    aside {
+        height: 150px;
+        text-align: center;
+    }
+
+    #deploy aside .aside-list {
+        width: 75%;
+        height: 55px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #deploy aside .aside-list {
+        color: grey;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 55px;
+        list-style-type: none;
+    }
+
+    #deploy aside ul li {
+        list-style-type: none;
+        border-top: 2px solid #e5e8ed;
+        padding-left: 18px;
+        float: left;
+        border-left: none;
+        text-align: center;
+    }
+
+    #deploy aside ul li:nth-child(1) {
+        border-top: 2px solid #0270ff;
+        color: #223863;
+        border-left: none;
+    }
+
+    .deploy-row-row {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #deploy aside .aside-list {
+        width: 100%;
+        }
 }
