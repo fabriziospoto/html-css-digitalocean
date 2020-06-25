@@ -865,6 +865,32 @@ footer ul {
     }
 }
 
+@media screen and (max-width: 567px) {
+    .c-line p {
+        margin-right: 21%;
+    }
+    .p-s {
+        margin-right: 21%;
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .c-line p {
+        margin-right: 18%;
+    }
+    .p-s {
+        margin-right: 18%;
+    }
+
+@media screen and (max-width: 540px) {
+    .c-line p {
+        margin-right: 16%;
+    }
+    .p-s {
+        margin-right: 16%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     #deploy aside .aside-list {
         width: 100%;
@@ -892,8 +918,6 @@ footer ul {
             float: left;
             font-weight: bold;
             margin-bottom: 0;
-            margin-right: 3%;
-            margin-left: 3%;
             padding: 0;
         }
 
@@ -901,11 +925,15 @@ footer ul {
             color: white;
             float: left;
             font-weight: bold;
-            margin-bottom: 0;
-            /* margin-right: 15%; */
         }
         #third-p {
             margin-left: 3%;
             padding: 0;
+        }
+        .c-line p {
+            margin-right: 5%;
+        }
+        .p-s {
+            margin-right: 5%;
         }
 }
