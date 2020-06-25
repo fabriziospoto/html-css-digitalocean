@@ -449,6 +449,10 @@ aside {
     line-height: 100px;
 }
 
+.countries-fl {
+    float: left;
+}
+
 .c-line p {
     color: white;
     float: left;
@@ -841,6 +845,9 @@ footer ul {
         float: left;
         font-weight: bold;
         margin-bottom: 0px;
+        margin-right: 3%;
+        margin-left: 3%;
+        padding: 0;
     }
     .p-s {
         color: white;
@@ -861,5 +868,44 @@ footer ul {
 @media screen and (max-width: 480px) {
     #deploy aside .aside-list {
         width: 100%;
+        }
+        .c-line {
+            width: 100%;
+            height: 40px;
+            color: white;
+            font-weight: bold;
+            border-bottom: 1px solid white;
+        }
+        .line-h {
+            width: 100%;
+            height: 40px;
+        }
+
+        .c-line-2 {
+            width: 100%;
+            color: white;
+            /* line-height: 40px; */
+            font-weight: bold;
+        }
+        .c-line p {
+            color: white;
+            float: left;
+            font-weight: bold;
+            margin-bottom: 0;
+            margin-right: 3%;
+            margin-left: 3%;
+            padding: 0;
+        }
+
+        .p-s {
+            color: white;
+            float: left;
+            font-weight: bold;
+            margin-bottom: 0;
+            /* margin-right: 15%; */
+        }
+        #third-p {
+            margin-left: 3%;
+            padding: 0;
         }
 }
