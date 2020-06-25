@@ -490,7 +490,8 @@ aside {
 
 #third-p {
     margin-right: 0;
-    margin-left: 67px;
+    /* margin-left: 67px; */
+    float: right;
 }
 
 .countries-bt {
@@ -598,16 +599,61 @@ aside {
 
 /* <!-- GETSTARTED TAB --> */
 .getstarted-row {
-    height: 135px;
+    color: white;
+    height: 130px;
+}
+
+#getstarted h2 {
+    line-height: 130px;
+    font-weight: bold;
 }
 
 .btn-p {
-    line-height: 135px;
+    line-height: 130px;
+}
+
+.get-btn {
+    background-color: white;
+    color: #0270ff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 /* FOOTER */
-.footer-row {
-    height: 500px;
+
+footer img {
+    width: 60px;
+    padding-top: 50px;
+}
+
+footer p {
+    color: #97a7b8;
+}
+
+.footer-p {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+.footer-i {
+    color: #97a7b8;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+footer ul {
+    padding: 0 0 50px 0;
+}
+
+.footer-li {
+    color: #97a7b8;
+    line-height: 30px;
+    list-style-type: none;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -659,7 +705,7 @@ aside {
 
 
 @media screen and (max-width: 991px) {
-    /* .navbar-header {
+    .navbar-header {
         float: none;
     }
     .navbar-left,.navbar-right {
@@ -692,17 +738,18 @@ aside {
     }
     .collapse.in{
         display:block !important;
-    } */
+    }
     .btn-nav-cll {
         margin-top: 18px;
     }
 
-    .navbar ul li a {
+    /* .navbar ul li a {
         /* height: 70px; */
-        line-height: 40px;
+        /* line-height: 40px;
         padding-left: 3px;
         padding-right: 3px;
-    }
+    } */
+
     aside {
         height: 150px;
         text-align: center;
@@ -752,6 +799,10 @@ aside {
         /* padding-left: 130px; */
         float: left;
     }
+    .footer-p {
+        padding-top: 20px;
+    }
+
 }
 
 @media screen (min-width: 782px) and (max-width: 991px;) {
@@ -801,6 +852,9 @@ aside {
     #third-p {
         float: right;
         /* margin-left: 0px; */
+    }
+    .footer-p {
+        padding-top: 20px;
     }
 }
 
